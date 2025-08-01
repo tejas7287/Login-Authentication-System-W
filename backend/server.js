@@ -45,9 +45,7 @@ app.get('/', (req, res) => {
   res.json({ message: 'Login Authentication System API' });
 });
 
-// TODO: Add authentication routes
-// app.use('/api/auth', require('./routes/auth'));
-// app.use('/api/users', require('./routes/users'));
+app.use('/api/auth', require('./routes/auth'));
 
 // Error handling middleware
 app.use((err, req, res, _next) => {
